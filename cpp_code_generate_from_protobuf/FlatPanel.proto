@@ -1,0 +1,57 @@
+message A
+{
+    required int32 deviceid = 1;  //device id
+    required int32 kevin = 2; //motion enable
+    repeated int32 test = 3;
+}
+
+message B
+{
+    required int32 deviceid = 1;  //device id
+    required int32 kobe = 2; //motion enable
+    
+}
+
+//start global enum
+enum GlobalEnumTest1
+{
+	ID1 = 1;
+	ID2 = 2;
+	ID3 = 3;
+}
+//end global enum
+
+message C
+{
+	enum LocalEnum1InC
+	{
+		Name1 = 1;
+		Name2 = 2;
+		Name3 = 3;
+	}
+	enum LocalEnum2InC
+	{
+		Name4 = 1;
+		Name5 = 2;
+		Name6 = 3;
+	}
+    //start local message EmbeddedInC
+    message EmbeddedInC
+    {
+        required int32 test =1;
+        required LocalEnum1InC = 3;
+    }
+    //end local message EmbeddedInC
+    required int32 shit = 1;  //device id
+    required int32 fuck = 2; //motion enable
+    required EmbeddedInC embeddedInC = 3;
+}
+
+
+//start global enum
+enum GlobalEnumTest2 
+{
+	Kobe = 2;
+	Lebron = 3
+}
+//end global enum
