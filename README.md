@@ -15,8 +15,8 @@ source file name, one is cpp file "flatpanel.cpp" and the other is the header fi
 
 flatpanel.h
 ___________________________________________
-#ifndef __H_FLATPANEL__H
-#define __H_FLATPANEL__H
+###ifndef __H_FLATPANEL__H
+###define __H_FLATPANEL__H
 class A
 {
 public:
